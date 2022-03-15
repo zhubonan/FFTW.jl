@@ -7,7 +7,8 @@ function get_provider()
     default_provider = "fftw"
 
     # Load the preference
-    provider = @load_preference("provider", default_provider)
+    #provider = @load_preference("provider", default_provider)
+    provider = default_provider
 
     # Ensure the provider matches one of the ones we support
     if provider ∉ ("fftw", "mkl")
